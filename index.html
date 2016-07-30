@@ -18,13 +18,13 @@ subtitle: This is where I write way too much about me
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Publicado el {{ post.date | date: "%B %-d, %Y" }}
     </p>
 
-    <div class="post-entry">
-      {{ post.content | strip_html | xml_escape | truncatewords: 0 }}
+    <!-- <div class="post-entry">
+      {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
+    </div> -->
 
     {% if post.tags.size > 0 %}
     <div class="blog-tags">
@@ -47,12 +47,12 @@ subtitle: This is where I write way too much about me
 <ul class="pager main-pager">
   {% if paginator.previous_page %}
   <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Recientes</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Antiguos &rarr;</a>
   </li>
   {% endif %}
 </ul>
