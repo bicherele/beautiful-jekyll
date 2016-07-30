@@ -1,6 +1,7 @@
 ---
 layout: post
 title: To be
+tags: monologue
 subtitle: ... or not to be?
 ---
 
