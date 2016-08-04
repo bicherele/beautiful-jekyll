@@ -18,7 +18,7 @@ subtitle: This is where I write way too much about me
     </a>
 
     <p class="post-meta">
-      Publicado el {{ post.date | date: "%B %-d, %Y" }}
+      Publicado el {{ post.date | date: "%B %-d, %Y" | replace:"January","Enero" | replace:"February","Febrero" | replace:"March","Marzo" | replace:"April","Abril" | replace:"May","Mayo" | replace:"June","Junio" | replace:"July","Julio" | replace:"August","Agosto" | replace:"September","Setiembre" | replace:"October","Octubre" | replace:"November","Noviembre" | replace:"December","Diciembre" }}
     </p>
 
     <!-- <div class="post-entry">
